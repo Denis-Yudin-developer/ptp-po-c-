@@ -62,14 +62,14 @@ namespace laba1
             Console.WriteLine("Введите название компании:");
             this.companyName= Console.ReadLine();
         }
-
+            
         public void Output()
         {
             Console.WriteLine("Количество сотрудников: " + employeesNumber);
             Console.WriteLine("Зарплата сотрудника: " + salary);
             Console.WriteLine("Адрес компании: " + address);
             Console.WriteLine("Название компании: " + companyName);
-            Console.ReadKey(true);  
         }
+        //TODO сделать деструктор
     }
 }

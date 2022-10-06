@@ -77,7 +77,13 @@ namespace laba1
             Console.WriteLine("Телефонный номер:" + phoneNumber);
             Console.WriteLine("Имя директор:" + director);
             Console.WriteLine("Статус компании:" + IsCompanyOpen());
-            Console.ReadKey(true);
+        }
+        //TODO деструктор
+        ~Derived1()
+        {
+            phoneNumber = null;
+            director = null;
+            isOpen = false;
         }
     }
 }
